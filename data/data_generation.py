@@ -2,12 +2,20 @@ import numpy as np
 import torch
 
 
-def generate_data(cycles, resolution, amplitude, noise_level):
-    length = np.pi * 2 * cycles
+def generate_data(start, stop, resolution, amplitude, noise_level, func):
+    # length = np.pi * 2 * cycles
 
-    X = np.linspace(0, length, resolution).reshape(-1, 1)
-    y = amplitude * np.sin(X).ravel()
-
+    X = np.linspace(start=start, stop=stop, num=resolution).reshape(-1, 1)
+    if func == 'sin':
+        y = amplitude * np.sin(X)
+    elif func == 'rectangle':
+        y = amplitude * np.sign(np.sin(X))
+    elif func == 'sawtooth':
+        y = amplitude * (X / np.pi - np.floor(0.5 + X / np.pi))
+    elif func == 'polynomial':
+        y = 0.005 * X ** 3 + 0.1 * X ** 2 + 0.001 * X - 2
+    else:
+        raise ValueError("Unsupported function type")
 
     noise = np.random.normal(0, noise_level, y.shape)
     y_noisy = y + noise
