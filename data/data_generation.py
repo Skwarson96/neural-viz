@@ -2,14 +2,14 @@ import numpy as np
 import torch
 
 
-def generate_data(cycles, resolution, amplitude):
+def generate_data(cycles, resolution, amplitude, noise_level):
     length = np.pi * 2 * cycles
 
     X = np.linspace(0, length, resolution).reshape(-1, 1)
     y = amplitude * np.sin(X).ravel()
 
 
-    noise = np.random.normal(0, 0.1, y.shape)
+    noise = np.random.normal(0, noise_level, y.shape)
     y_noisy = y + noise
 
     X_train = torch.tensor(X, dtype=torch.float32)
