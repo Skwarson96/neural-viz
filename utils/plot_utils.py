@@ -1,10 +1,20 @@
 import matplotlib.pyplot as plt
 import numpy as np
+from matplotlib.animation import FuncAnimation, PillowWriter, FFMpegWriter
+from io import BytesIO
+from PIL import Image
 
 
-def plot_results(X, y, X_train, y_train, y_pred, loss, epoch, args):
+def fig_to_array(fig):
+    buf = BytesIO()
+    fig.savefig(buf, format='png')
+    buf.seek(0)
+    img = Image.open(buf)
+    return img
+
+
+def plot_results(X, y, X_train, y_train, y_pred, loss, epoch, fig, ax, args):
     plt.clf()
-    ax = plt.subplot(111)
     plt.autoscale(False)
     plt.xlim(args.start, args.stop)
     plt.ylim(np.min(y)-1, np.max(y)+1)
@@ -22,4 +32,8 @@ def plot_results(X, y, X_train, y_train, y_pred, loss, epoch, args):
     plt.ylabel('y')
     plt.title(f'Fitting a neural network to a {args.function} curve after {epoch} epochs')
     plt.pause(0.01)
-    # plt.show()
+
+    return fig_to_array(fig)
+
+
+
