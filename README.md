@@ -8,16 +8,24 @@ learning process through animated plots.
 ## Function Visualizations
 
 ### Sinusoidal Function
-![Sinusoidal Function](assets/sinusoidal_function.gif)
+<p align="center">
+  <img src="https://github.com/Skwarson96/neural-viz/blob/main/assets/sin_animation.gif" width="200"/>
+</p>
 
 ### Rectangle Function
-![Rectangle Function](assets/rectangle_function.gif)
+<p align="center">
+  <img src="https://github.com/Skwarson96/neural-viz/blob/main/assets/rectangle_animation.gif" width="200"/>
+</p>
 
 ### Sawtooth Function
-![Sawtooth Function](assets/sawtooth_function.gif)
+<p align="center">
+  <img src="https://github.com/Skwarson96/neural-viz/blob/main/assets/sawtooth_animation.gif" width="200"/>
+</p>
 
 ### Polynomial Function
-![Polynomial Function](assets/polynomial_function.gif)
+<p align="center">
+  <img src="https://github.com/Skwarson96/neural-viz/blob/main/assets/polynomial_animation.gif" width="200"/>
+</p>
 
 ## Description
 
