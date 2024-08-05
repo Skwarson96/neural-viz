@@ -9,22 +9,22 @@ learning process through animated plots.
 
 ### Sinusoidal Function
 <p align="center">
-  <img src="https://github.com/Skwarson96/neural-viz/blob/main/assets/sin_animation.gif" width="200"/>
+  <img src="https://github.com/Skwarson96/neural-viz/blob/main/assets/sin_animation.gif"/>
 </p>
 
 ### Rectangle Function
 <p align="center">
-  <img src="https://github.com/Skwarson96/neural-viz/blob/main/assets/rectangle_animation.gif" width="200"/>
+  <img src="https://github.com/Skwarson96/neural-viz/blob/main/assets/rectangle_animation.gif"/>
 </p>
 
 ### Sawtooth Function
 <p align="center">
-  <img src="https://github.com/Skwarson96/neural-viz/blob/main/assets/sawtooth_animation.gif" width="200"/>
+  <img src="https://github.com/Skwarson96/neural-viz/blob/main/assets/sawtooth_animation.gif"/>
 </p>
 
 ### Polynomial Function
 <p align="center">
-  <img src="https://github.com/Skwarson96/neural-viz/blob/main/assets/polynomial_animation.gif" width="200"/>
+  <img src="https://github.com/Skwarson96/neural-viz/blob/main/assets/polynomial_animation.gif"/>
 </p>
 
 ## Description
