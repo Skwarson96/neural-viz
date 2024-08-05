@@ -6,7 +6,7 @@ and polynomial functions. The project allows for the visualization of the
 learning process through animated plots.
 
 ## Function Visualizations
-
+@quantech is my second nickname 😜
 ### Sinusoidal Function
 <p align="center">
   <img src="https://github.com/Skwarson96/neural-viz/blob/main/assets/sin_animation.gif"/>
