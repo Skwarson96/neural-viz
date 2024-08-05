@@ -4,8 +4,7 @@ import torch.nn as nn
 
 class SimpleNN(nn.Module):
     def __init__(self):
-        super(
-            SimpleNN, self).__init__()
+        super(SimpleNN, self).__init__()
         self.fc1 = nn.Linear(1, 300)
         self.fc2 = nn.Linear(300, 300)
         self.fc3 = nn.Linear(300, 300)
